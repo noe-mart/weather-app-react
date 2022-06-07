@@ -1,10 +1,10 @@
-import '../css/default.css'
+import styles from '../css/Default.module.css'
 
 export default function () {
   return (
-    <main>
-      <h2>Hola 👋, aún no has buscado un lugar. 🗺️</h2>
-      <h3>Puedes buscarlo ahí arriba ☝️</h3>
+    <main className={styles.center}>
+      <h2 className={styles.h2}>Hola 👋, aún no has buscado un lugar. 🗺️</h2>
+      <h3 className={styles.h3}>Puedes buscarlo ahí arriba ☝️</h3>
     </main>
   )
 }

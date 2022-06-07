@@ -1,8 +1,7 @@
 import { useContext } from 'react'
 import { getCity } from '../../services/api'
-import '../App.css'
 import { CityContext } from './CityContext'
-
+import styles from '../css/List.module.css'
 const List = ({ cities, clearInput }) => {
 
   const {setGlobalCity} = useContext(CityContext)
@@ -13,7 +12,7 @@ const List = ({ cities, clearInput }) => {
     }
 
   return (
-    <ul className="list">
+    <ul className={styles.list}>
       {cities.map((city) => (
         <li
           key={city.id}

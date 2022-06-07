@@ -2,13 +2,13 @@ h1, h2, h4{
     text-align: center;
 }
 
-.temp-frio{
+.temp_frio{
     font-size: 3em;
     color: #6ab5b3;
     text-shadow: 5px 5px #38505f;
 }
 
-.temp-calor{
+.temp_calor{
     font-size: 3em;
     color: rgb(224, 228, 107);
     text-shadow: 5px 5px rgb(142, 142, 53);
@@ -27,7 +27,7 @@ h2, h4{
     margin-top: 10px;
 }
 
-.card-header{
+.card_header{
     display: flex;
     align-items: center;
 }
@@ -35,7 +35,7 @@ h2, h4{
 li{
     list-style: none;
 }
-.card-future{
+.card_future{
     min-width: 125px;
     border: 2px solid #91c9c7;
     border-radius: 10px;
@@ -44,11 +44,11 @@ li{
     flex-direction: column;
     align-items: center;
 }
-.card-future img{
+.card_future img{
     margin: auto;
 }
 
-.horizontal-scroll{
+.horizontal_scroll{
     display: flex;
     overflow: hidden;
     overflow-x: scroll;
@@ -58,6 +58,6 @@ p span{
     font-size: 0.85rem;
 }
 
-.text-sm{
+.text_sm{
     color: rgb(68, 67, 67);
 }
