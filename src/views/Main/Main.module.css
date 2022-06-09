@@ -28,7 +28,9 @@ h2, h4{
 }
 
 .card_header{
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -60,4 +62,12 @@ p span{
 
 .text_sm{
     color: rgb(68, 67, 67);
+}
+
+.location{
+    padding: 10px;
+}
+
+.image_center{
+    display: block;
 }

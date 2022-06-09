@@ -1,7 +1,7 @@
 import { useContext } from 'react'
-import { getCity } from '../../services/api'
-import { CityContext } from './CityContext'
-import styles from '../css/List.module.css'
+import { getCity } from '../../../services/api'
+import { CityContext } from '../CityContext'
+import styles from './List.module.css'
 const List = ({ cities, clearInput }) => {
 
   const {setGlobalCity} = useContext(CityContext)

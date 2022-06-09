@@ -1,4 +1,4 @@
-import styles from '../css/Default.module.css'
+import styles from './Welcome.module.css'
 
 export default function () {
   return (

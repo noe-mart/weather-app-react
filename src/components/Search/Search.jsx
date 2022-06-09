@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import { searchCity } from '../../services/api'
-import List from './List'
-import styles from '../css/Search.module.css'
+import { searchCity } from '../../../services/api'
+import List from '../List/List'
+import styles from './Search.module.css'
 
 function Search() {
   const [city, setCity] = useState('')
@@ -34,7 +34,7 @@ function Search() {
   const handlerBlur = () => {
     setTimeout(() => {
       setFocus(false)
-    }, 100);
+    }, 200);
   }
 
   return (

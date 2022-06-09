@@ -1,21 +1,21 @@
 import './App.css'
 import { CityContext } from './components/CityContext'
-import Default from './components/Default'
-import Search from './components/Search'
-import Main from './components/Main'
+import Welcome from './views/Welcome/Welcome'
+import Search from './components/Search/Search'
+import Main from './views/Main/Main'
 import { useState } from 'react'
 
 function App() {
   const [globalCity, setGlobalCity] = useState(null) 
+
   return (
     <CityContext.Provider value={{globalCity, setGlobalCity}}>
       <div className="container">
-        <h1>Aplicación del tiempo</h1>
         <Search />
         {
           globalCity 
           ? <Main/>
-          : <Default />
+          : <Welcome />
         }
       </div>
     </CityContext.Provider>
