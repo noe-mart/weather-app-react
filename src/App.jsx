@@ -10,6 +10,7 @@ function App() {
 
   return (
     <CityContext.Provider value={{globalCity, setGlobalCity}}>
+      <div className="app">
       <div className="container">
         <Search />
         {
@@ -17,6 +18,7 @@ function App() {
           ? <Main/>
           : <Welcome />
         }
+      </div>
       </div>
     </CityContext.Provider>
   )

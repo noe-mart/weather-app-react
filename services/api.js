@@ -1,5 +1,3 @@
-
-
 const options = {
   method: 'GET',
   headers: {
@@ -8,25 +6,23 @@ const options = {
   },
 }
 
-
 const searchCity = (city) => {
   return fetch(
     `https://weatherapi-com.p.rapidapi.com/search.json?q=${city}&lang=es`,
     options
   )
     .then((response) => response.json())
-    .then((response) => (response))
+    .then((response) => response)
     .catch((err) => console.error(err))
 }
 
 const getCity = (lat, lon) => {
-
-return fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${lat},${lon}&days=5&lang=es`, options)
-.then(response => response.json())
-.then(response => (response))
-.catch(err => console.error(err));
+  return fetch(
+    `https://weatherapi-com.p.rapidapi.com/forecast.json?q=${lat},${lon}&days=5&lang=es`,
+    options
+  )
+    .then((response) => response.json())
+    .then((response) => response)
+    .catch((err) => console.error(err));
 }
-export {
-    getCity,
-    searchCity
-}
+export { getCity, searchCity }

@@ -1,0 +1,6 @@
+.scroll {
+    display: flex;
+    width: 300px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
